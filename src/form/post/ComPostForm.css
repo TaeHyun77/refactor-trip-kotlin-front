@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "TTLaundryGothicB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 동행, 자유 게시글 공통 작성 폼 */
+.post-insert-form {
+  font-family: "TTLaundryGothicB", sans-serif;
+  width: 800px; /* Reduced width for a cleaner layout */
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.post-insert-form h2 {
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+/* 동행 게시글 캘린더 */
+.start-date,
+.end-date {
+  display: inline-block;
+  width: calc(50% - 10px); 
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px; 
+  margin-right: 10px; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s ease;
+}
+
+.start-date:last-child {
+  margin-right: 0; 
+}
+
+.start-date:focus,
+.end-date:focus {
+  border-color: #7fb77e;
+  outline: none;
+}
+
+hr {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+td {
+  padding: 15px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  border-color: #7fb77e;
+  outline: none;
+}
+
+.textarea-field {
+  resize: vertical;
+  height: 100px;
+}
+
+.button-container {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.submit-button {
+  padding: 12px 20px;
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.submit-button:hover {
+  transform: scale(1.03);
+}
+
+.react-calendar {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  font-family: "TTLaundryGothicB", sans-serif;
+}
+
+.react-calendar__tile {
+  padding: 15px 0;
+  text-align: center;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #f1f1f1;
+}
+
+.react-calendar__tile--now {
+  background-color: lightseagreen;
+  color: white;
+  border-radius: 8px;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background-color: lightseagreen;
+}
+
+.react-calendar__tile--active {
+  background-color: #7fb77e;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background-color: lightseagreen;
+}
+
+.react-calendar__navigation button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: lightseagreen;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.react-calendar__navigation button:enabled:hover {
+  background-color: #e9f5e9;
+  border-radius: 6px;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #777;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #ef5350; /* Highlight weekends */
+}
+
+.tag-input-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tag-input {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+
+.tag-input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #333;
+  position: relative;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  margin-left: 4px;
+  font-size: 10px;
+  padding: 5px;
+}
+
+.delete-button:hover {
+  color: #ff0000;
+}
+
+.image-btn {
+  display: inline-block;
+  width: 100%;;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  background-color: #3a9f97;
+  color: white;
+  padding: 12px;
+}
+
+.image-btn:hover {
+  transform: scale(1.03);
+}
+
+
+/* 자유 게시판 수정 폼 */
+
+.free-update-form {
+  font-family: "TTLaundryGothicB", sans-serif;
+  width: 800px; /* Reduced width for a cleaner layout */
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.free-update-form h2 {
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}

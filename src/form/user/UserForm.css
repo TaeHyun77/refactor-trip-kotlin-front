@@ -1,0 +1,216 @@
+.userInfoContainer {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+}
+
+.userInfoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Profile {
+  margin-bottom: 20px;
+}
+
+.userProfileImage {
+  width: 100px; 
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username,
+.email {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.my_self_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.02);
+}
+
+.follow {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.02);
+  text-align: left;
+  flex-grow: 1;
+  font-size: 16px;
+  color: black;
+}
+
+.my_self {
+  text-align: left;
+  flex-grow: 1;
+  font-size: 16px;
+  color: black;
+}
+
+.btn_my_self {
+  color: rgb(0, 206, 124);
+  border: 1px solid rgb(0, 206, 124);
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn_message_box {
+  color: rgb(0, 206, 124);
+  border: 1px solid rgb(0, 206, 124);
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn_my_self:hover {
+    transform: scale(1.03);
+}
+
+.update_user_btn {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  font-size: 14px;
+  color: rgb(0, 206, 124);
+  border: 1px solid rgb(0, 206, 124);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.update_user_btn:hover {
+    transform: scale(1.03);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: none;
+  background-color: lightgray;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tab-button.active {
+  background-color: lightseagreen;
+  color: white;
+  font-size: 18px;
+}
+
+.tab-content {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.userInfo-post,
+.user-parti {
+  text-align: center;
+}
+
+.user-parti p {
+  font-size: 0.9em;
+}
+
+.user-post-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.user-post-btn:hover {
+    transform: scale(1.03);
+}
+
+.postCards {
+  display: inline-block;
+  width: 100%;
+}
+
+.postCardList {
+  width: 100%;
+  height: 100px;
+  border: 1px solid lightgray;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.postCardList:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.postCardList h3 {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+}
+
+.postCardList p {
+  color: #555;
+  font-size: 16px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.postCardList p .icon {
+  margin-right: 8px;
+}
+

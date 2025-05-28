@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Malgun Gothic';
+  src: local('Malgun Gothic'), url('https://fonts.googleapis.com/css2?family=Malgun+Gothic:wght@400;700&display=swap') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container, .containerAbout {
+  font-family: 'Malgun Gothic', sans-serif;
+  width: 1600px;
+  margin: 50px auto;
+}
+
+.containerAbout p {
+  margin: 30px;
+}
+
+hr { 
+  margin-bottom: 50px; 
+  border: 1px solid #ccc;
+}
+
+/* 게시판 제목과 버튼 레이아웃 */
+.title-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title-button-container h1 {
+  margin-right: 20px;
+  font-size: 32px;
+}
+
+/* 버튼 위치를 오른쪽 정렬 */
+.title-button-container button {
+  font-family: 'Malgun Gothic', sans-serif;
+  font-size: 16px;
+  background-color: #3a9f97;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+td {
+  padding: 30px;
+  font-size: 16px;
+  vertical-align: middle; /* 모든 셀의 내용을 가운데 정렬 */
+  background-color: white;
+}
+
+.input-field, .textarea-field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.textarea-field {
+  resize: none;
+}
+
+.table-cell {
+  padding: 30px 0;
+  text-align: center;
+  vertical-align: middle;
+  height: 50px;  
+}
+
+
+.title-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title-button-container h2 {
+  font-size: 32px;
+  font-family: 'Malgun Gothic', sans-serif;
+  margin-right: auto; /* 왼쪽에 위치 */
+}
+
+.btn-admin {
+  padding: 10px 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+}
