@@ -13,13 +13,13 @@ export const join = (data) => api.post(`/member/register`, data);
 export const update = (data) => api.post(`/member/update`, data) // json 형식
 
 // 유저 정보 삭제
-export const remove = (username) => api.delete(`/user/delete/${username}`)
+export const remove = (username) => api.delete(`/member/delete/${username}`)
 
 // 유저 정보
 export const info = () => api.get(`/member/info`)
 
 // 유저 리스트
-export const list = () => api.get("/user/userList");
+export const list = () => api.get("/member/list");
 
 // 사용자 프로필 이미지
 export const getImage = (username) => api.get(`/member/profileImage/${username}`);

@@ -113,9 +113,9 @@ const LoginContextProvider = ({ children }) => {
     // 권한 정보 세팅
     const updatedRoles = { isUser: false, isAdmin: false };
 
-    if (role === "ROLE_USER") {
+    if (role === "USER") {
       updatedRoles.isUser = true;
-    } else if (role === "ROLE_ADMIN") {
+    } else if (role === "ADMIN") {
       updatedRoles.isAdmin = true;
     }
 
