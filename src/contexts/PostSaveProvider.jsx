@@ -32,9 +32,9 @@ export const PostSaveProvider = ({ children }) => {
       alert("게시글 작성 성공");
 
       if (postCategory == "free") {
-        navigate("/postCom");
-      } else {
         navigate("/post");
+      } else {
+        navigate("/postCom");
       }
     } else {
       console.log(`게시글 작성 실패`);

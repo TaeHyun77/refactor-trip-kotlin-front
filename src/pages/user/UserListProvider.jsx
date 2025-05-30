@@ -16,7 +16,7 @@ export const UserListProvider = ({ children }) => {
       console.log("Fetched userList:", data);
       setUserList(data);
     } catch (error) {
-      console.error("Failed to fetch user list:", error);
+      console.error("사용자 리스트를 불러오는 중 에러 발생", error);
     }
   };
 
@@ -38,7 +38,7 @@ export const UserListProvider = ({ children }) => {
         }
       }
     } catch (error) {
-      console.error("Failed to delete user:", error);
+      console.error("회원 삭제 중 에러 발생", error);
       alert("회원 삭제 중 에러 발생");
     }
   };

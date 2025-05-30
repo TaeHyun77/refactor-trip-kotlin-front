@@ -51,7 +51,7 @@ export const UserForm = ({ userInfo, updateUser }) => {
   };
 
   const handlePostClick = (postId) => {
-    navigate(`/post`);
+    navigate(`/postCom`);
   };
 
   const handleFollow = () => {
@@ -180,7 +180,7 @@ export const UserForm = ({ userInfo, updateUser }) => {
                             {post.place} · {" "}
                             {formatDate(post.createdAt)}
                           </span>
-                          <span> 조회수: {post.count}</span>
+                          <span> 조회수: {post.viewCnt}</span>
                         </p>
                       </div>
                     ))}
@@ -236,7 +236,7 @@ export const UserForm = ({ userInfo, updateUser }) => {
                             {post.place} ·{" "}
                             {formatDate(post.createdAt)}
                           </span>
-                          <span> 조회수: {post.count}</span>
+                          <span> 조회수: {post.viewCnt}</span>
                         </p>
                       </div>
                     ))}

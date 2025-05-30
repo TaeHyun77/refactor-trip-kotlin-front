@@ -63,6 +63,7 @@ const UserUpdateForm = () => {
   const deleteUser = async (username) => {
     try {
       const check = window.confirm("탈퇴 하시겠습니까 ?");
+      
       if (check) {
         const response = await auth.remove(username);
         if (response.status === 200) {
